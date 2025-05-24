@@ -1,0 +1,18 @@
+---
+layout: layout.html
+---
+<h1>Hi, Welcome to my website</h1>
+<p>I go by "NextiaIndex" pen name. I went from reading textbooks as a natural science prodigy to writing configuration files as a Linux ricing artist.</p>
+<p>This website is my place to describe myself and write my thoughts. It can be Linux, it can be a book that I just finished reading, it can be anything.</p>
+
+<br> <br> <br> <br>
+
+<h1>My Latest Blog</h1>
+{% assign blogs = collections.blog | reverse | slice: 0, 5 %}
+{% for blog in blogs %}
+  <div style="margin-bottom: 3em">
+    <h3><a href="{{ blog.url }}">{{ blog.data.title }}</a></h3>
+    <p style="font-size: 0.9em; line-height: 0.5em">{{ blog.date | date: "%B %e, %Y" }}</p>
+  </div>
+{% endfor %}
+<p>Looking for more? Visit the <a href="blog.html">Blog page</a></p>

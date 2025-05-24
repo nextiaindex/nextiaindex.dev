@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+	--background: #1f2430;
+	--foreground: #cccac2;
+
+	--black: #171b24;
+	--red: #ed8274;
+	--green: #87d96c;
+	--yellow: #facc6e;
+	--blue: #6dcbfa;
+	--magenta: #dabafa;
+	--cyan: #90e1c6;
+	--gray: #c7c7c7;
+
+	--lightgray: #686868;
+	--lightred: #f28779;
+	--lightgreen: #d5ff80;
+	--lightyellow: #ffd173;
+	--lightblue: #73d0ff;
+	--lightmagenta: #dfbfff;
+	--lightcyan: #95e6cb;
+	--white: #ffffff;
+
+}
+
+body {
+	background-color: var(--background);
+	font-family: "Nunito", sans-serif;
+	max-width: 75%;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	align-items: center; 
+	justify-content: space-between;
+	min-height: 3em;
+	padding-top: 1em;
+	color: var(--foreground);
+	font-size: 1.25em;
+}
+
+#nav-bar-title a:link, #nav-bar-title a:visited {
+	color: var(--lightred);
+	font-weight: bold;
+	text-decoration: none;
+}
+#nav-bar-title a:hover {
+	color: var(--lightgreen);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav-bar-buttons {
+	display: flex;
+	gap: 1em;
+}
+
+#nav-bar-buttons a:link, #nav-bar-buttons a:visited {
+	color: var(--foreground);
+}
+#nav-bar-buttons a:hover {
+	color: var(--lightred);
+}
+
+main {
+	color: var(--foreground);
+}
+
+footer {
+	color: var(--foreground);
+	font-size: 0.75em
+}
+h1 {
+	font-size: 2.5em;
+}
+
+p {
+	font-size: 1.15em;
+}
+
+a:link, a:visited {
+	color: var(--foreground);
+}
+a:hover {
+	color: var(--lightred);
+}
+
+code {
+	background-color: var(--black);
+}
+
+li {
+	font-size: 1.15em;
+	margin-bottom: 1em;
+}

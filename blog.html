@@ -1,0 +1,12 @@
+---
+layout: layout.html
+permalink: blog.html
+---
+<h1>Blog</h1>
+{% assign blogs = collections.blog | reverse %}
+{% for blog in blogs %}
+  <div style="margin-bottom: 3em">
+    <h3><a href="{{ blog.url }}">{{ blog.data.title }}</a></h3>
+    <p style="font-size: 0.9em; line-height: 0.5em">{{ blog.date | date: "%B %e, %Y" }}</p>
+  </div>
+{% endfor %}
